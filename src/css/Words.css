@@ -1,0 +1,34 @@
+h3 {
+    font-family: Arial;
+    margin-bottom: 10px;
+    color: #404040;
+    font-weight: 800;
+    display: inline-block;
+
+}
+
+h3.title {
+    display: inline;
+}
+
+ul.words {
+    margin-top: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    list-style-type: square;
+    color: #404040;
+}
+
+.author {
+    font-family: Arial;
+    color: #8c8c8c;
+}
+
+.quote {
+    display: block;
+    color: #8c8c8c;
+    margin-top: 10px;
+}
+
+img {
+    margin-top: 0px;
+}

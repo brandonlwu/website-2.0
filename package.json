@@ -1,4 +1,5 @@
 {
+  "homepage": "https://brandonlwu.com",
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
@@ -6,12 +7,22 @@
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "emailjs-com": "^3.2.0",
     "react": "^17.0.2",
+    "react-animated-text": "^0.1.4",
     "react-dom": "^17.0.2",
+    "react-lazyload": "^3.2.0",
+    "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "react-sequence-animator": "^2.3.0",
+    "react-social-icons": "^5.10.0",
+    "react-spring": "^9.4.2",
+    "react-tabs": "^3.2.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
