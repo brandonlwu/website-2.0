@@ -1,7 +1,7 @@
 import '../css/App.css';
 import React, { useState } from 'react';
-import faceimg1 from '../assets/face_serious.png'
-import faceimg2 from '../assets/face_smile_blink.png'
+import faceimg1 from '../assets/optimized-face-serious.png'
+import faceimg2 from '../assets/optimized-face-smile-blink.png'
 import github from '..//assets/github.png'
 import linkedin from '..//assets/linkedin.png'
 import twitter from '..//assets/twitter.png'

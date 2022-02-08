@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import camera from '../assets/camera.png'
+import camera from '../assets/optimized-camera.png'
 import img1 from '../assets/pics/1.jpeg'
 import img2 from '../assets/pics/2.jpeg'
 import img3 from '../assets/pics/3.jpeg'

@@ -1,6 +1,6 @@
 import '../css/Words.css';
 import React, { useState } from 'react';
-import reading from '../assets/reading.png'
+import reading from '../assets/optimized-reading.png'
 import { useNavigate } from "react-router-dom";
 
 function Words() {

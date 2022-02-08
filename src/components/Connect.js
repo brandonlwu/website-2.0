@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import img from '../assets/face_smile_blink.png'
+import img from '../assets/optimized-face-smile-blink.png'
 import sequioa from '../assets/sequioa.png'
 import agave from '../assets/agave.png'
 import cactus from '../assets/cactus.png'

@@ -1,6 +1,6 @@
 import '../css/App.css';
 import React, { useState } from 'react';
-import faceimg1 from '../assets/face_smile.png'
+import faceimg1 from '../assets/optimized-face-smile.png'
 import { SocialIcon } from 'react-social-icons';
 import { useNavigate } from "react-router-dom";
 

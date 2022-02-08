@@ -1,6 +1,6 @@
 import '../css/App.css';
-import mainimg1 from '../assets/chilling.png'
-import mainimg2 from '../assets/apple_unlooped.png'
+import mainimg1 from '../assets/optimized-chilling.png'
+import mainimg2 from '../assets/optimized-apple-unlooped.png'
 import apple_button from '../assets/apple_button.png'
 import React, { useState } from 'react';
 import MainPage from './MainPage'

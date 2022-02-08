@@ -1,6 +1,6 @@
 import '../css/App.css';
 import React, { useState } from 'react';
-import mainimg from '../assets/face.png'
+import mainimg from '../assets/optimized-face.png'
 import { useNavigate } from "react-router-dom";
 
 function MainPage() {
