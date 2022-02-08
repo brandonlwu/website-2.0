@@ -7,7 +7,7 @@ import Words from './components/Words'
 import Pictures from './components/Pictures'
 import Connect from './components/Connect'
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 
 function App() {
   return (
