@@ -36,7 +36,7 @@ function LandingPage() {
           <button onClick = {pokeBrandon}>
             {buttonText}
           </button>
-          {stage ? <button className = "condensed" onClick = {() => navigate('/condensed')}>&gt; Cut to the chase!</button>:null}
+          {stage ? <button onClick = {() => navigate('/condensed')}>&gt; Cut to the chase!</button>:null}
         </div>
         <div className = "spacer"></div>
       </div>
