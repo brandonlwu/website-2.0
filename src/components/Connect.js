@@ -13,7 +13,7 @@ function Pictures() {
     const [imagePath, setImagePath] = useState(img);
     const [pressed, setPressed] = useState(true);
     const [introText, setIntroText] = useState("Well well well, hello there!");
-    const [successText, setSuccessText] = useState(false);
+    const [formText, setFormText] = useState("");
     const [toSend, setToSend] = useState({
         name: '',
         email: '',
@@ -38,7 +38,9 @@ function Pictures() {
 
     function handleSubmit(event) {
         event.preventDefault();
-        send(
+        console.log(document.getElementById("form"))
+        if (toSend.name !== '' && toSend.email != '' && toSend.plant != '') {
+            send(
             'service_g1jl5lk',
             'template_227getr',
             toSend,
@@ -46,11 +48,20 @@ function Pictures() {
           )
             .then((response) => {
               console.log('SUCCESS!', response.status, response.text);
-              setSuccessText(true);
+              setFormText("Received! Talk to you soon! :)");
+              document.getElementById('name-input').value = '';
+              document.getElementById('email-input').value = '';
+              document.getElementById('message-input').value = '';
+              document.getElementById('seq-input').checked = false;
+              document.getElementById('agave-input').checked = false;
+              document.getElementById('cactus-input').checked = false;
             })
             .catch((err) => {
               console.log('FAILED...', err);
             });
+        } else {
+            setFormText("Please fill out your name, email, and plant!");
+        }
       }    
 
     return (
@@ -70,10 +81,11 @@ function Pictures() {
           </h2>
         </div>
         <div className = "form-container">
-            <form onSubmit={handleSubmit} id = "form">
+            <form onSubmit={handleSubmit} id = "form" autocomplete= "off">
                 <input
                     type='text'
                     name='name'
+                    id = 'name-input'
                     placeholder='Name'
                     value={toSend.name}
                     onChange={handleChange}
@@ -81,12 +93,14 @@ function Pictures() {
                 <input
                     type='email'
                     name='email'
+                    id = 'email-input'
                     placeholder='Email'
                     value={toSend.email}
                     onChange={handleChange}
                 />
                 <textarea 
                     name = 'message' 
+                    id = 'message-input'
                     rows="6" cols="50" 
                     form="form" 
                     className = "text-area"
@@ -96,20 +110,20 @@ function Pictures() {
                 <label className = "label">Very serious question - which plant are you?</label><br></br>
                 <div className = "plant-container">
                     <label>
-                        <input type="radio" name='plant' value='sequioa' onChange={chooseSequioa}/>
+                        <input id = 'seq-input' type="radio" name='plant' value='sequioa' onChange={chooseSequioa}/>
                         <img className = "plant-img" src = {sequioa}></img>
                     </label>
                     <label>
-                        <input type="radio" name='plant' value='agave'  onChange={chooseAgave}/>
+                        <input id = 'agave-input' type="radio" name='plant' value='agave'  onChange={chooseAgave}/>
                         <img className = "plant-img" src = {agave}></img>
                     </label>
                     <label>
-                        <input type="radio" name='plant' value='cactus' onChange={chooseCactus}/>
+                        <input id = 'cactus-input' type="radio" name='plant' value='cactus' onChange={chooseCactus}/>
                         <img className = "plant-img" src = {cactus}></img>
                     </label>
                 </div>
                 <input type="submit" value="Submit" />
-                {successText ? <h2>Received! Talk to you soon! :)</h2>: null}
+                <h2 className = "form-message">{formText}</h2>
             </form>
         </div>
         <div className = "spacer"></div>

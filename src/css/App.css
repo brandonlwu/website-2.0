@@ -234,6 +234,10 @@ input[type=text], input[type=email]  {
     border-bottom: 1px solid black;
 }
 
+.form-message {
+    font-weight: 800;
+}
+
 input.message {
     height: 100px;
     padding: 0px;
