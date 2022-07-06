@@ -1,7 +1,7 @@
 import '../css/App.css';
 import mainimg1 from '../assets/optimized-chilling.png'
 import mainimg2 from '../assets/optimized-apple-unlooped.png'
-import apple_button from '../assets/apple_button.png'
+import apple_button from '../assets/optimized-apple-rocking.png'
 import React, { useState } from 'react';
 import MainPage from './MainPage'
 import { useNavigate } from "react-router-dom";
@@ -30,7 +30,7 @@ function LandingPage() {
           <h2>{introText}</h2>
         </div>
         <div>
-          <img className = "no-select mainimg" src = {imagePath} alt = "Sleeping under a tree"></img>
+        <button className = "img-button" onClick = {pokeBrandon}><img className = "no-select mainimg" src = {imagePath} alt = "Sleeping under a tree"></img></button>
         </div>
         <div className = "button-container">
           <button onClick = {pokeBrandon}>

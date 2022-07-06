@@ -22,6 +22,15 @@ function Words() {
           <h3 className = "title">Welcome to my cozy reading room!</h3><br></br>
           <h3>Books and short stories I've enjoyed</h3>
           <ul className = "words">
+            <li>On Earth We're Briefly Gorgeous
+              <span class = "author"> by Ocean Vuong</span>
+            </li>
+            <li>The Kite Runner
+              <span class = "author"> by Khaled Hosseini</span>
+            </li>
+            <li>Crying in H Mart
+              <span class = "author"> by Michelle Zauner</span>
+            </li>
             <li>Recitatif
               <span class = "author"> by Toni Morrison</span>
             </li>
@@ -59,6 +68,9 @@ function Words() {
             </li>
             <li>The Paper Menagerie
               <span class = "author"> by Ken Liu</span>
+            </li>
+            <li>Everything I never told you
+              <span class = "author"> by Celeste Ng</span>
             </li>
           </ul>
           {/* <h3>Writing</h3>

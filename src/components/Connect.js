@@ -23,7 +23,6 @@ function Pictures() {
 
     const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
-        // console.log(toSend);
       };
 
     function chooseSequioa() {
@@ -38,7 +37,6 @@ function Pictures() {
 
     function handleSubmit(event) {
         event.preventDefault();
-        console.log(document.getElementById("form"))
         if (toSend.name !== '' && toSend.email != '' && toSend.plant != '') {
             send(
             'service_g1jl5lk',
