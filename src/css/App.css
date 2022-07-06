@@ -4,6 +4,11 @@
   }
 
   @font-face {
+    font-family: morant-heavy;
+    src: url(../fonts/morant-font/Morant-lgMB5.ttf);
+  }
+
+  @font-face {
     font-family: Press Start 2P;
     src: url(../fonts/PressStart2P-Regular.ttf);
   }
@@ -234,8 +239,20 @@ input[type=text], input[type=email]  {
     border-bottom: 1px solid black;
 }
 
+input[type=text]._2b0Yz {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
 .form-message {
     font-weight: 800;
+}
+
+.img-button {
+    width: 100%;
 }
 
 input.message {
