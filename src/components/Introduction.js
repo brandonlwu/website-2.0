@@ -40,7 +40,7 @@ function Introduction() {
                 </button>
             </div> : 
             <div>
-                <p>I'm Brandon! I'm currently a sophomore at Yale. I plan to study Computer Science and Humanities. I hope to one day create something meaningful</p>
+                <p>I'm Brandon! I'm currently a junior at Yale. I plan to study Computer Science and Humanities. I hope to one day create something meaningful</p>
                 <ul className = "intro-list">
                     <li>At the moment, I work at 
                         <span className = "athelas link">
