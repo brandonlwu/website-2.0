@@ -52,9 +52,9 @@ function Pictures() {
             <LazyLoad><img className = "polaroid" src = {img13}></img></LazyLoad>
           </div>
           <div className = "polaroid-col">
+          <LazyLoad><img className = "polaroid" src = {img3}></img></LazyLoad>
           <LazyLoad><img className = "polaroid" src = {img5}></img></LazyLoad>
           <LazyLoad><img className = "polaroid" src = {img6}></img></LazyLoad>
-          <LazyLoad><img className = "polaroid" src = {img3}></img></LazyLoad>
           <LazyLoad><img className = "polaroid" src = {img11}></img></LazyLoad>
           </div>
           <div className = "polaroid-col">

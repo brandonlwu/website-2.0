@@ -23,7 +23,7 @@ function MainPage() {
             <button onClick = {() => navigate('/creations')}>&gt; Enough talk! I want to see something YARGHHH!!</button>
             <button onClick = {() => navigate('/pictures')}>&gt; I can't read! Do you have any cool pictures?</button>
             <button onClick = {() => navigate('/words')}>&gt; I can read! Where the words at?</button>
-            <button onClick = {() => navigate('/connect')}>&gt; I want to introduce myself IN PLANT FORM</button>
+            <button onClick = {() => navigate('/connect')}>&gt; I want to introduce myself, but as a plant</button>
           </div>
         </div>
         <div className = "spacer"></div>

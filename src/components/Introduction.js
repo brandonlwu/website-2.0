@@ -40,28 +40,31 @@ function Introduction() {
                 </button>
             </div> : 
             <div>
-                <p>I'm Brandon! I'm currently a junior at Yale. I plan to study Computer Science and Humanities. I hope to one day create something meaningful</p>
+                <p>I'm Brandon! I'm currently a junior at Yale. I like creating unique digital experiences and hope to one day create something meaningful</p>
                 <ul className = "intro-list">
-                    <li>At the moment, I work at 
-                        <span className = "athelas link">
-                        <a href = "https://www.athelas.com/" target="_blank"> Athelas</a>
-                        </span>, write for the
-                        <span className = "yale link">
-                        <a href = "https://yaledailynews.com/" target="_blank"> yale daily news</a>
-                        </span>, and run 
+                    <li> At the moment, I write the 
+                        <span className = "daily link">
+                        <a href = "https://www.dailydropout.fyi/" target="_blank"> daily dropout</a>
+                        </span>, run 
                         <span className = "nfme link">
                         <a href = "https://letsnft.me/" target="_blank"> letsnft.me</a>
+                        </span>, and map my thoughts on
+                        <span className = "everything link">
+                        <a href = "https://everythingiwishitoldyou.com/" target="_blank"> everythingiwishitoldyou</a>
                         </span>
                     </li>
-                    <li>In the past, I studied abroad as a
+                    <li>In the past, I worked at
+                        <span className = "athelas link">
+                        <a href = "https://www.athelas.com/" target="_blank"> Athelas</a>
+                        </span>, studied abroad as a
                         <span className = "yale link">
                         <a href = "https://light.yale.edu/" target = "_blank"> light fellow</a>
-                        </span> + did summer research at the
-                        <span className = "andermann link">
+                        </span>, and researched at the
+                        <span className = "link">
                         <a href = "https://www.andermannlab.com/" target = "_blank"> andermann lab</a>
                         </span>
                     </li>
-                    <li>In my free time I enjoy riffing on the piano, starting but never actually finishing a good novel, and eating great mangoes.</li>
+                    <li>In my free time I enjoy riffing on the piano, starting but never finishing a good novel, and eating great taco truck tacos.</li>
                 </ul>
                 <div className = 'socials'>
                     <a href = "mailto:brandon.wu@yale.edu"><img className = "email social-icons" src = {email}></img></a>

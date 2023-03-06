@@ -127,12 +127,20 @@ li {
     color: #FC5378;
 }
 
+.daily {
+    color: #ff9966;
+}
+
 .yale {
     color: #0f4d92;
 }
 
 .nfme {
     color: #9999ff;
+}
+
+.everything {
+    color: #538cc6
 }
 
 .link {
