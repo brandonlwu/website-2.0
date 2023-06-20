@@ -22,6 +22,14 @@ function Words() {
           <h3 className = "title">Welcome to my cozy reading room!</h3><br></br>
           <h3>Books and short stories I've enjoyed</h3>
           <ul className = "words">
+            <li>Tomorrow, and Tomorrow, and Tomorrow
+              <span class = "author"> by Gabrielle Zevin</span>
+              <span class = "quote">"To allow yourself to play with another person is no small risk. 
+              It means allowing yourself to be open, to be exposed, to be hurt."</span>
+            </li>
+            <li>Man's Search for Meaning
+              <span class = "author"> by Viktor Frankl</span>
+            </li>
             <li>On Earth We're Briefly Gorgeous
               <span class = "author"> by Ocean Vuong</span>
             </li>
