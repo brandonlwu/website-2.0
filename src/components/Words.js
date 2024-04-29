@@ -22,6 +22,12 @@ function Words() {
           <h3 className = "title">Welcome to my cozy reading room!</h3><br></br>
           <h3>Books and short stories I've enjoyed</h3>
           <ul className = "words">
+            <li>In Search of Lost Time
+            <span class = "author"> by Marcel Proust</span>
+            </li>
+            <li>The Idiot
+            <span class = "author"> by Elif Batuman</span>
+            </li>
             <li>Tomorrow, and Tomorrow, and Tomorrow
               <span class = "author"> by Gabrielle Zevin</span>
               <span class = "quote">"To allow yourself to play with another person is no small risk. 
@@ -54,9 +60,6 @@ function Words() {
             </li>
             <li>Humans of New York
               <span class = "author"> by Brandon Stanton</span>
-            </li>
-            <li>The Stranger
-              <span class = "author"> by Albert Camus</span>
             </li>
             <li>All the Light We Cannot See
               <span class = "author"> by Anthony Doerr</span>
