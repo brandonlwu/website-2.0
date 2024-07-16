@@ -48,9 +48,6 @@ function Introduction() {
                         </span>, run 
                         <span className = "nfme link">
                         <a href = "https://letsnft.me/" target="_blank"> letsnft.me</a>
-                        </span>, and map my thoughts on
-                        <span className = "everything link">
-                        <a href = "https://everythingiwishitoldyou.com/" target="_blank"> everythingiwishitoldyou</a>
                         </span>
                     </li>
                     <li>In the past, I worked at
