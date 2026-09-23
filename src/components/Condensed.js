@@ -28,7 +28,7 @@ function Condensed() {
         <div>
           <div className = "body-container condensed">
             <div>
-                <p>I'm Brandon! I currently work at BCG. I like creating unique digital experiences and my goal is to contribute to meaningful work</p>
+                <p>I'm Brandon! I currently work at <span className = "bcg link"><a href = "https://www.bcg.com/" target="_blank">BCG</a></span>. I like creating unique digital experiences and my goal is to contribute to meaningful work</p>
                 <ul className = "condensed">
                     <li> My past projects include 
                         <span className = "daily link">
