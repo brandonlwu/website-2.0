@@ -6,7 +6,6 @@ import Creations from './components/Creations'
 import Words from './components/Words'
 import Pictures from './components/Pictures'
 import Connect from './components/Connect'
-import Assets from './components/Assets'
 import ReactDOM from "react-dom";
 import { HashRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 
@@ -22,7 +21,6 @@ function App() {
         <Route path="words" element={<Words />} />
         <Route path="pictures" element={<Pictures />} />
         <Route path="connect" element={<Connect />} />
-        <Route path="assets" element={<Assets />} />
       </Routes>
     </Router>
   );

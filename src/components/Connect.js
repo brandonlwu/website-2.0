@@ -5,8 +5,10 @@ import agave from '../assets/agave.png'
 import cactus from '../assets/cactus.png'
 import { useNavigate } from "react-router-dom";
 import LazyLoad from 'react-lazyload';
-import { send } from 'emailjs-com';
 import '../css/App.css'
+
+// Google Apps Script web app that emails form submissions (see apps-script/README.md)
+const FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycby4hMd2CXjWkNL6F5WuFRks_aOKF9gQ7ZzF0hMNMaRl9JelU--IzwHLl67umBCldWng8A/exec';
 
 function Pictures() {
     const navigate = useNavigate();
@@ -14,11 +16,13 @@ function Pictures() {
     const [pressed, setPressed] = useState(true);
     const [introText, setIntroText] = useState("Well well well, hello there!");
     const [formText, setFormText] = useState("");
+    const [sending, setSending] = useState(false);
     const [toSend, setToSend] = useState({
         name: '',
         email: '',
         message: '',
         plant:'',
+        website: '',
       });
 
     const handleChange = (e) => {
@@ -37,26 +41,27 @@ function Pictures() {
 
     function handleSubmit(event) {
         event.preventDefault();
-        if (toSend.name !== '' && toSend.email != '' && toSend.plant != '') {
-            send(
-            'service_lnv8mfm',
-            'template_227getr',
-            toSend,
-            'user_govzRxUNNpTlZ4Q0IB67p'
-          )
-            .then((response) => {
-              console.log('SUCCESS!', response.status, response.text);
+        if (sending) return;
+        if (toSend.name !== '' && toSend.email !== '' && toSend.plant !== '') {
+            setSending(true);
+            setFormText("Sending...");
+            // text/plain keeps this a "simple" request, so Apps Script doesn't need to answer a CORS preflight
+            fetch(FORM_ENDPOINT, {
+              method: 'POST',
+              headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+              body: JSON.stringify(toSend),
+            })
+            .then((response) => response.json())
+            .then((result) => {
+              if (!result.ok) throw new Error(result.error);
               setFormText("Received! Talk to you soon! :)");
-              document.getElementById('name-input').value = '';
-              document.getElementById('email-input').value = '';
-              document.getElementById('message-input').value = '';
-              document.getElementById('seq-input').checked = false;
-              document.getElementById('agave-input').checked = false;
-              document.getElementById('cactus-input').checked = false;
+              setToSend({ name: '', email: '', message: '', plant: '', website: '' });
             })
             .catch((err) => {
               console.log('FAILED...', err);
-            });
+              setFormText("Hmm, that didn't go through. Please try again in a bit!");
+            })
+            .finally(() => setSending(false));
         } else {
             setFormText("Please fill out your name, email, and plant!");
         }
@@ -69,7 +74,7 @@ function Pictures() {
             <h2 className = "title">{introText}</h2>
         </div>
         <div>
-            <img className = "mainimg" src = {imagePath} alt = "Camera"></img>
+            <img className = "mainimg" src = {imagePath} alt = "Smiling face"></img>
         </div>
         <div>
           <h2>I'm excited to get to know you!
@@ -105,22 +110,33 @@ function Pictures() {
                     value={toSend.message} 
                     onChange={handleChange}>
                 </textarea>
+                {/* Honeypot for spam bots: hidden from people, so only bots fill it in */}
+                <input
+                    type='text'
+                    name='website'
+                    value={toSend.website}
+                    onChange={handleChange}
+                    tabIndex='-1'
+                    autoComplete='off'
+                    aria-hidden='true'
+                    style={{ position: 'absolute', left: '-9999px' }}
+                />
                 <label className = "label">Very serious question - which plant are you?</label><br></br>
                 <div className = "plant-container">
                     <label>
-                        <input id = 'seq-input' type="radio" name='plant' value='sequioa' onChange={chooseSequioa}/>
+                        <input id = 'seq-input' type="radio" name='plant' value='sequioa' checked={toSend.plant === 'sequioa'} onChange={chooseSequioa}/>
                         <img className = "plant-img" src = {sequioa}></img>
                     </label>
                     <label>
-                        <input id = 'agave-input' type="radio" name='plant' value='agave'  onChange={chooseAgave}/>
+                        <input id = 'agave-input' type="radio" name='plant' value='agave' checked={toSend.plant === 'agave'} onChange={chooseAgave}/>
                         <img className = "plant-img" src = {agave}></img>
                     </label>
                     <label>
-                        <input id = 'cactus-input' type="radio" name='plant' value='cactus' onChange={chooseCactus}/>
+                        <input id = 'cactus-input' type="radio" name='plant' value='cactus' checked={toSend.plant === 'cactus'} onChange={chooseCactus}/>
                         <img className = "plant-img" src = {cactus}></img>
                     </label>
                 </div>
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Submit" disabled={sending} />
                 <h2 className = "form-message">{formText}</h2>
             </form>
         </div>

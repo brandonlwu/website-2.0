@@ -16,7 +16,7 @@ function Words() {
             <h3 className = "title">{introText}</h3>
         </div>
         <div>
-            <img className = "mainimg" src = {imagePath} alt = "Evil face"></img>
+            <img className = "mainimg" src = {imagePath} alt = "Reading a book"></img>
         </div>
         <div>
           <h3 className = "title">Welcome to my cozy reading room!</h3><br></br>
@@ -68,7 +68,7 @@ function Words() {
                  and infinity in the other, so really, children, 
                  mathematically, all of light is invisible."</span>
             </li>
-            <li>When Breathe Becomes Air
+            <li>When Breath Becomes Air
               <span class = "author"> by Paul Kalanithi</span>
             </li>
             <li>The Lathe of Heaven
@@ -80,7 +80,7 @@ function Words() {
             <li>The Paper Menagerie
               <span class = "author"> by Ken Liu</span>
             </li>
-            <li>Everything I never told you
+            <li>Everything I Never Told You
               <span class = "author"> by Celeste Ng</span>
             </li>
           </ul>

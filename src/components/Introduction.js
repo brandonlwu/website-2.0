@@ -5,7 +5,6 @@ import faceimg2 from '../assets/optimized-face-smile-blink.png'
 import github from '..//assets/github.png'
 import linkedin from '..//assets/linkedin.png'
 import twitter from '..//assets/twitter.png'
-import email from '..//assets/email.png'
 import { useNavigate } from "react-router-dom";
 
 function Introduction() {
@@ -40,17 +39,20 @@ function Introduction() {
                 </button>
             </div> : 
             <div>
-                <p>I'm Brandon! I'm currently a junior at Yale. I like creating unique digital experiences and hope to one day create something meaningful</p>
+                <p>I'm Brandon! I currently work at BCG. I like creating unique digital experiences and my goal is to contribute to meaningful work</p>
                 <ul className = "intro-list">
-                    <li> At the moment, I write the 
+                    <li> My past projects include 
                         <span className = "daily link">
                         <a href = "https://www.dailydropout.fyi/" target="_blank"> daily dropout</a>
-                        </span>, run 
+                        </span>, 
                         <span className = "nfme link">
                         <a href = "https://letsnft.me/" target="_blank"> letsnft.me</a>
+                        </span>,
+                        <span className = "sticks link">
+                        <a href = "https://sticks.brandonlwu.com/" target="_blank"> sticks and bones</a>
                         </span>
                     </li>
-                    <li>In the past, I worked at
+                    <li>In the past, I worked as an engineer at
                         <span className = "athelas link">
                         <a href = "https://www.athelas.com/" target="_blank"> Athelas</a>
                         </span>, studied abroad as a
@@ -61,10 +63,9 @@ function Introduction() {
                         <a href = "https://www.andermannlab.com/" target = "_blank"> andermann lab</a>
                         </span>
                     </li>
-                    <li>In my free time I enjoy riffing on the piano, starting but never finishing a good novel, and eating great taco truck tacos.</li>
+                    <li>In my free time I enjoy surfing, biking, and eating great taco truck tacos.</li>
                 </ul>
                 <div className = 'socials'>
-                    <a href = "mailto:brandon.wu@yale.edu"><img className = "email social-icons" src = {email}></img></a>
                     <a href = "https://twitter.com/wuhoobrandon"><img className = "twitter social-icons" src = {twitter}></img></a>
                     <a href = "https://github.com/brandonlwu"><img className = "github social-icons" src = {github}></img></a>
                     <a href = "https://www.linkedin.com/in/brandon-w-293342133/"><img className = "linkedin social-icons" src = {linkedin}></img></a>

@@ -32,8 +32,6 @@ function Creations() {
             <li> <a href = "https://brandonlwu.github.io/play2020/" style = {{color: '#ffcc66'}}>play 2020</a> - a game inspired by 2048 but with a twist: my high school classmate's faces</li>
             <li> <a href = "https://sticks.brandonlwu.com" style = {{color: '#ff3333'}}>sticks and bones</a> - help alfred the ainu find the best stick! </li>
             <li> <a href = "https://crunchycranium.substack.com/" style = {{color: '#996600'}}>crunchy cranium chronicles</a> - mildly interesting thought nuggets </li>
-            <li> <a href = "https://apps.apple.com/in/app/recess-vibe-out/id1566256162" style = {{color: '#5D5FEF'}}>recess</a> - an iOS app for friend groups at yale</li>
-            <li><strike> world domination</strike></li>
            </ul>
         </div>
         <div className = "spacer"></div>

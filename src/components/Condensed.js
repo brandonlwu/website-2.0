@@ -28,17 +28,20 @@ function Condensed() {
         <div>
           <div className = "body-container condensed">
             <div>
-                <p>I'm Brandon! I'm currently a junior at Yale. I like creating unique digital experiences and hope to one day create something meaningful</p>
+                <p>I'm Brandon! I currently work at BCG. I like creating unique digital experiences and my goal is to contribute to meaningful work</p>
                 <ul className = "condensed">
-                    <li> At the moment, I write the 
+                    <li> My past projects include 
                         <span className = "daily link">
                         <a href = "https://www.dailydropout.fyi/" target="_blank"> daily dropout</a>
-                        </span>, run 
+                        </span>, 
                         <span className = "nfme link">
                         <a href = "https://letsnft.me/" target="_blank"> letsnft.me</a>
+                        </span>,
+                        <span className = "sticks link">
+                        <a href = "https://sticks.brandonlwu.com/" target="_blank"> sticks and bones</a>
                         </span>
                     </li>
-                    <li>In the past, I worked at
+                    <li>In the past, I worked as an engineer at
                         <span className = "athelas link">
                         <a href = "https://www.athelas.com/" target="_blank"> Athelas</a>
                         </span>, studied abroad as a
@@ -49,25 +52,9 @@ function Condensed() {
                         <a href = "https://www.andermannlab.com/" target = "_blank"> andermann lab</a>
                         </span>
                     </li>
-                    <li>In my free time I enjoy riffing on the piano, starting but never finishing a good novel, and eating great taco truck tacos.</li>
+                    <li>In my free time I enjoy surfing, biking, and eating great taco truck tacos.</li>
                 </ul>
-                <div className = "condensed">
-                <h2 className = "condensed">Here are some of the projects I'm most proud of - and also some which didn't go as well. But who knows I might pick it back up one day!</h2>
-                    <ul className = "intro-list condensed">
-                    <li> <a href = "https://letsnft.me">
-                    <span style = {{color:'#FF6666'}}>N</span>
-                    <span style = {{color:'#6666FF'}}>F</span>-
-                    <span style = {{color:'#33CC33'}}>M</span>
-                    <span style = {{color:'#3399FF'}}>E </span>
-                    </a>
-                    - a web app for friends to create and share personalized NFT - "NF-ME" - versions of themselves</li>
-                    <li> <a href = "https://brandonlwu.github.io/play2020/" style = {{color: '#ffcc66'}}>play 2020</a> - a game inspired by 2048 but with a twist: my high school classmate's faces</li>
-                    <li> <a href = "https://apps.apple.com/in/app/recess-vibe-out/id1566256162" style = {{color: '#5D5FEF'}}>recess</a> - an iOS app for friend groups at yale</li>
-                    <li><strike className = "condensed"> world domination</strike></li>
-                </ul>
-                </div>
                 <div className = 'socials'>
-                    <SocialIcon className = "social-icons" url = "mailto:brandon.wu@yale.edu" network="email" style={{ height: 60, width: 60 }} />
                     <SocialIcon className = "social-icons" url = "https://twitter.com/wuhoobrandon" network="twitter" style={{ height: 60, width: 60 }} />
                     <SocialIcon className = "social-icons" url = "https://github.com/brandonlwu" network="github" style={{ height: 60, width: 60 }} />
                     <SocialIcon className = "social-icons" url = "https://www.linkedin.com/in/brandon-w-293342133/" network="linkedin" style={{ height: 60, width: 60 }} />
